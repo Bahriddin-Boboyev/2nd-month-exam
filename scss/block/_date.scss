@@ -1,0 +1,131 @@
+
+
+.date{
+  padding-bottom: 151px;
+}
+
+.date__block{
+  width: 100%;
+  height: 308px;
+  background-repeat: no-repeat;
+  background-image: url('../../img/date-bg.png');
+  padding-left: 100px;
+ align-items: center;
+  background-position: top 61% center;
+  gap: 20px;
+  position: relative;
+}
+
+.date__input{
+  font-weight: 500;
+  width: 335px;
+  height: 50px;
+  background: #FFFFFF;
+border-radius: 5px;
+font-size: 20px;
+}
+.date__input::placeholder{
+  padding: 18px 147px 12px 22px;
+  font-weight: 400;
+font-size: 17px;
+align-items: center;
+color: #949494;
+}
+.date__title{
+  font-weight: 700;
+font-size: 48px;
+line-height: 20px;
+align-items: center;
+color: #FFFFFF;
+margin-bottom: 42px;
+padding-top: 61px;
+}
+.date__button{
+  @include btn;
+  margin-left: 21px;
+  cursor: pointer;
+}
+.date__button:hover{
+    transition: 0.5s;
+    background: #FFBD54;
+  }
+.date__button:active{
+    transition: 0.5s;
+    background: #FFBD54;
+    opacity: 0.4;
+  }
+
+
+.date__bg-img-block{
+  max-width: 100%;
+  z-index: 2;
+  position: absolute;
+  top: -108px;
+  right: 0;
+}
+
+@media screen and (max-width:1128px){
+  .date__bg-img-block{
+    max-width: 60%;
+    top: -108px;
+  }
+
+}
+@media screen and (max-width:1074px){
+
+  .date__block{
+    padding-left: 50px;
+  }
+  .date__bg-img-block{
+    max-width: 50%;
+    top: -108px;
+  }
+  .date__title{
+    font-weight: 700;
+  font-size: 38px;
+  margin-bottom: 32px;
+  padding-top: 61px;
+  }
+  .date__bg-img-block{
+    top: -42px;
+    right: 0;
+  }
+}
+.date__form{
+  padding-top: 5%;
+}
+
+@media screen and (max-width:1000px){
+  .date__bg-img-block{
+    display: none;
+  }
+  .date__block{
+    padding-left: 0px;
+  }
+  .date__form{
+  text-align: center;
+  }
+
+.date{
+  padding-bottom: 95px;
+}
+}
+@media screen and (max-width:582px){
+  .date__button{
+    margin-top: 10px;
+  }
+  .date__title{
+  line-height: 40px;
+  }
+  .date__input{
+    width: 290px;
+  }
+  .date__button{
+    font-size: 13px;
+    margin-left: 21px;
+    padding: 12px 40px;
+  }
+  .date{
+    padding-bottom: 56px;
+  }
+}

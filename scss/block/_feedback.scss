@@ -1,0 +1,241 @@
+.feedback{
+  padding-bottom: 247px;
+}
+
+
+.feedback__block{
+  @include flex;
+  justify-content: space-between;
+}
+.feedback__content-block{
+  display: inline-block;
+  background-size: contain;
+  width: 985px;
+  height: 546px;
+  background-repeat: no-repeat;
+  background-image: url('../../img/feedback-bg-img.png');
+  padding-left: 111px;
+  padding-top: 62px;
+}
+.feedback__content-title{
+  max-width: 360px;
+  font-weight: 700;
+font-size: 48px;
+line-height: 62px;
+color: #FFFFFF;
+margin-bottom: 14px;
+}
+.feedback__content-text{
+  max-width: 334px;
+  font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #949494;
+margin-bottom: 29px;
+}
+.feedback__form-1{
+  width: 375px;
+  height: 50px;
+  font-weight: 500;
+}
+.feedback__form-1::placeholder{
+  padding-top: 16px;
+  padding-bottom: 13px;
+  padding-left: 22px;
+  font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+align-items: center;
+color: #949494;
+background: #FFFFFF;
+border-radius: 0px;
+}
+.feedback__form-2{
+  width: 375px;
+  height: 50px;
+  font-weight: 500;
+}
+.feedback__form-2::placeholder{
+  padding-top: 16px;
+  padding-bottom: 13px;
+  padding-left: 22px;
+  font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+align-items: center;
+color: #949494;
+background: #FFFFFF;
+border-radius: 0px;
+}
+
+.feedback__commit{
+  background: #FFFFFF;
+border-radius: 0px;
+padding-top: 17px;
+padding-left: 22px;
+margin-bottom: 8px;
+}
+.feedback__commit::placeholder{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  align-items: center;
+  color: #949494;
+}
+.feedback__form-1{
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+.feedback__form-2{
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+.feedback__btn {
+  background: #FFBD54;
+border-radius: 0px;
+padding: 11px 36px;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+color: #FFFFFF;
+}
+.feedback__btn:hover{
+  transition: 0.5s;
+  background: #000;
+}
+.feedback__btn:active{
+  transition: 0.5s;
+  background: #000;
+  opacity: 0.3;
+}
+.feedback__form{
+  position: relative;
+}
+.feedback__img-bg{
+  background-size: contain;
+  display: block;
+  width: 357px;
+  height: 345px;
+  background-repeat: no-repeat;
+  background-image: url(../../img/feedback-bg-img-2.png);
+  top: -21%;
+  right: -4%;
+  position: absolute;
+}
+
+@media screen and (max-width:1300px){
+.feedback__img-bg{
+  display: none;
+}
+.feedback__content-block {
+  display: inline-block;
+  background-size: cover;
+  width: 985px;
+  padding-left: 80px;
+  padding-top: 32px;
+}
+}
+
+@media screen and (max-width:969px){
+
+  .feedback__content-title{
+  font-size: 38px;
+  line-height: 50px;
+
+  margin-bottom: 11px;
+  }
+  .feedback__content-text{
+  font-size: 13px;
+  margin-bottom: 20px;
+  }
+  .feedback__content-block {
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+  .feedback__form-1{
+    width: 300px;
+    height: 40px;
+  }
+  .feedback__form-2{
+    width: 300px;
+    height: 40px;
+  }
+  .feedback__commit{
+    width: 300px;
+    height: 150px;
+  }
+  .feedback__btn {
+  padding: 8px 28px;
+  font-weight: 500;
+  font-size: 13px;
+  }
+}
+
+@media screen and (max-width:843px){
+  .feedback__block{
+   flex-direction: column;
+   margin-left: 7px;
+   margin-right: 7px;
+  }
+  .feedback__content-block {
+    display: block;
+    background-size: cover;
+    width: 80%;
+    padding-left: 30px;
+    padding-top: 20px;
+
+  }
+  .feedback__form-1{
+    width: 400px;
+    height: 40px;
+  }
+  .feedback__form-2{
+    width: 400px;
+    height: 40px;
+  }
+  .feedback__commit{
+    width: 400px;
+    height: 150px;
+  }
+  .feedback{
+    padding-bottom: 140px;
+  }
+
+
+}
+
+@media screen and (max-width:539px){
+  iframe{
+    display: none;
+  }
+  .feedback__form-1{
+    width: 300px;
+
+  }
+  .feedback__form-2{
+    width: 300px;
+
+  }
+  .feedback__commit{
+    width: 300px;
+  }
+}
+
+@media screen and (max-width:495px){
+
+.feedback__form-1{
+  width: 180px;
+
+}
+.feedback__form-2{
+  width: 180px;
+
+}
+.feedback__commit{
+  width: 180px;
+}
+.feedback{
+  padding-bottom: 56px;
+}
+
+}

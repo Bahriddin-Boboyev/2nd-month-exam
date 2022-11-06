@@ -1,0 +1,153 @@
+
+.footer{
+  background: #F3F3F3;
+  border: 1px solid #EBEBEB;
+  height: 221px
+}
+.footer__nav{
+  @include flex;
+  justify-content: space-between;
+  padding-top: 57px;
+  padding-bottom: 57px
+}
+.footer__list{
+  max-width: 330px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.footer__img-block{
+  max-width: 158px;
+
+}
+  .footer__img-block a img:active{
+    opacity: 0.5;
+    transition:0.5s;
+  }
+  .footer__img-block a img:hover{
+    opacity: 0.5;
+    transition:0.9s;
+  }
+.footer__item__link{
+  margin-bottom: 10px;
+  font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+color: #333333;
+}
+
+.footer__item-2-link{
+  font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+color: #333333;
+margin-bottom: 3px;
+}
+.footer__item-4-link{
+  max-width: 157px;
+  font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+align-items: center;
+color: #333333;
+
+}
+.footer__item-3-link{
+  font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+text-align: right;
+color: #333333;
+margin-bottom: 4px;
+
+}
+.footer__item__link:hover{
+    color: #FFBD54;
+    transition: 0.5s;
+  }
+.footer__item__link:active{
+    opacity: 0.3;
+  }
+  .footer__item-2-link:hover{
+    color: #FFBD54;
+    transition: 0.5s;
+  }
+  .footer__item-2-link:active{
+    opacity: 0.3;
+  }
+  .footer__item-4-link:hover{
+    color: #FFBD54;
+    transition: 0.5s;
+  }
+  .footer__item-4-link:active{
+    opacity: 0.3;
+  }
+  .footer__item-3-link:hover{
+    color: #FFBD54;
+    transition: 0.5s;
+  }
+  .footer__item-3-link:active{
+    opacity: 0.3;
+  }
+
+
+.item-2-link::before{
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-image: url('../../img/calendar-img.svg');
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.item-4-link::before{
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 13px;
+  background-repeat: no-repeat;
+  background-image: url('../../img/house-img.svg');
+  margin-right: 5px;
+}
+.item-3-link::before{
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-image: url('../../img/phone-img.svg');
+  margin-right: 5px;
+  vertical-align: text-bottom;
+  margin-left: -19px;
+}
+
+
+@media screen and (max-width:932px){
+  .footer__list-2, .footer__box-3, .footer__list-3{
+    display: none;
+  }
+  .footer__list{
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+  }
+}
+
+
+@media screen and (max-width:676px){
+  .footer__nav{
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 0px
+  }
+  .footer__list{
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  }
+  .footer__img-block{
+    max-width: 130px;
+    padding-bottom: 20px;
+  }
+}
