@@ -134,6 +134,42 @@ gap: 17px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.site-header__sup-item, .site-header__sup-second-block{
+  position: relative;
+  display: block;
+}
+.site-header__sup-item:hover::after{
+  width: 100%;
+}
+.site-header__sup-second-block:hover::after{
+  width: 100%;
+}
+
+
+.site-header__sup-item::after{
+    content: "";
+    position: absolute;
+    transition: 0.5s;
+    width: 0;
+    height: 5px;
+    background-color: #FFBD54;
+    left: 0;
+    bottom: -5px;
+    z-index: 3;
+}
+
+.site-header__sup-second-block::after{
+    content: "";
+    position: absolute;
+    transition: 0.5s;
+    width: 0;
+    height: 4px;
+    background-color: #FFBD54;
+    left: 0;
+    bottom: -7px;
+    z-index: 3;
+}
+
 
 .site-header__sup-link{
   width: 100%;
